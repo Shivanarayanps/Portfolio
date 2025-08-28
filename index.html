@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiva Narayan PS - DevOps Engineer</title>
+    <meta name="description" content="Shiva Narayan PS - DevOps & Software Engineer with expertise in cloud-native infrastructure, CI/CD pipelines, and AI/ML deployment workflows">
+    <meta name="keywords" content="DevOps, Cloud, AWS, Docker, Kubernetes, CI/CD, Terraform, Ansible">
+    <meta name="author" content="Shiva Narayan PS">
+    <meta property="og:title" content="Shiva Narayan PS - DevOps Engineer">
+    <meta property="og:description" content="DevOps & Software Engineer with 1.5+ years experience in cloud infrastructure and CI/CD automation">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Three.js for 3D effects -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <!-- Typed.js for typing effect -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <div class="logo-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2>Shiva Narayan PS</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link" data-section="home">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-section="about">
+                        <i class="fas fa-user"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link" data-section="skills">
+                        <i class="fas fa-cogs"></i>
+                        <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link" data-section="projects">
+                        <i class="fas fa-briefcase"></i>
+                        <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#timeline" class="nav-link" data-section="timeline">
+                        <i class="fas fa-clock"></i>
+                        <span>Timeline</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-section="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="greeting-text">Hello, I'm</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="highlight">Shiva Narayan PS</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I'm a <span id="typed-text"></span>
+                </h2>
+                <p class="hero-description">
+                    DevOps & Software Engineer with 1.5+ years of hands-on experience in building cloud-native 
+                    infrastructure, automating CI/CD pipelines, and managing scalable, secure DevOps workflows 
+                    in production environments.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary btn-glow">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary btn-outline">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="1.5">0</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Issues Resolved</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="99.99">0</div>
+                        <div class="stat-label">Uptime %</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="tech-card" data-tech="AWS">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                    <div class="tech-card" data-tech="Docker">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                    <div class="tech-card" data-tech="Kubernetes">
+                        <i class="fab fa-kubernetes"></i>
+                        <span>K8s</span>
+                    </div>
+                    <div class="tech-card" data-tech="Jenkins">
+                        <i class="fab fa-jenkins"></i>
+                        <span>Jenkins</span>
+                    </div>
+                    <div class="tech-card" data-tech="Terraform">
+                        <i class="fab fa-terraform"></i>
+                        <span>Terraform</span>
+                    </div>
+                    <div class="tech-card" data-tech="iOS">
+                        <i class="fab fa-apple"></i>
+                        <span>iOS</span>
+                    </div>
+                </div>
+                <div class="hero-avatar">
+                    <div class="avatar-container">
+                        <div class="avatar-ring"></div>
+                        <div class="avatar-image">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="avatar-particles"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll Down</div>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-subtitle">Get to know me better</div>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="about-intro">
+                        <p class="highlight-text">
+                            I am a DevOps & Software Engineer with 1.5+ years of hands-on experience in building 
+                            cloud-native infrastructure, automating CI/CD pipelines, and managing scalable, secure 
+                            DevOps workflows in production environments.
+                        </p>
+                    </div>
+                    <div class="about-details">
+                        <p>
+                            Experienced in Infrastructure as Code (IaC) using Terraform and Ansible, cloud automation 
+                            on AWS (EC2, EKS, Rocky Linux), and container orchestration with Docker and Kubernetes. 
+                            Proven track record of resolving over 50+ critical infrastructure and CI/CD issues, 
+                            leading to 99.99% uptime for high-availability services.
+                        </p>
+                    </div>
+                    <div class="about-expertise">
+                        <h3>My Expertise</h3>
+                        <div class="expertise-grid">
+                            <div class="expertise-item">
+                                <i class="fas fa-cloud"></i>
+                                <span>Cloud Infrastructure</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-code-branch"></i>
+                                <span>CI/CD Automation</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Security & Compliance</span>
+                            </div>
+                            <div class="expertise-item">
+                                <i class="fas fa-chart-line"></i>
+                                <span>Performance Optimization</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-card">
+                        <div class="card-header">
+                            <h3>Experience Overview</h3>
+                        </div>
+                        <div class="experience-timeline">
+                            <div class="timeline-point">
+                                <div class="point-dot"></div>
+                                <div class="point-content">
+                                    <h4>DevOps Engineer</h4>
+                                    <p>Current Role</p>
+                                </div>
+                            </div>
+                            <div class="timeline-point">
+                                <div class="point-dot"></div>
+                                <div class="point-content">
+                                    <h4>Software Engineer</h4>
+                                    <p>Previous Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-subtitle">Technologies I work with</div>
+            </div>
+            <div class="skills-container">
+                <div class="skills-nav">
+                    <button class="skill-nav-btn active" data-category="all">
+                        <i class="fas fa-th-large"></i>
+                        <span>All</span>
+                    </button>
+                    <button class="skill-nav-btn" data-category="languages">
+                        <i class="fas fa-code"></i>
+                        <span>Languages</span>
+                    </button>
+                    <button class="skill-nav-btn" data-category="cloud">
+                        <i class="fas fa-cloud"></i>
+                        <span>Cloud</span>
+                    </button>
+                    <button class="skill-nav-btn" data-category="devops">
+                        <i class="fas fa-cogs"></i>
+                        <span>DevOps</span>
+                    </button>
+                    <button class="skill-nav-btn" data-category="tools">
+                        <i class="fas fa-tools"></i>
+                        <span>Tools</span>
+                    </button>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category" data-category="languages">
+                        <h3>Programming Languages</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="Python">
+                                <div class="skill-icon">
+                                    <i class="fab fa-python"></i>
+                                </div>
+                                <span>Python</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Java">
+                                <div class="skill-icon">
+                                    <i class="fab fa-java"></i>
+                                </div>
+                                <span>Java</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="JavaScript">
+                                <div class="skill-icon">
+                                    <i class="fab fa-js"></i>
+                                </div>
+                                <span>JavaScript</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Bash">
+                                <div class="skill-icon">
+                                    <i class="fab fa-bash"></i>
+                                </div>
+                                <span>Bash</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="95"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-category="cloud">
+                        <h3>Cloud Platforms</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="AWS">
+                                <div class="skill-icon">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <span>AWS</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Azure">
+                                <div class="skill-icon">
+                                    <i class="fab fa-microsoft"></i>
+                                </div>
+                                <span>Azure</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="GCP">
+                                <div class="skill-icon">
+                                    <i class="fab fa-google"></i>
+                                </div>
+                                <span>GCP</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill-category" data-category="devops">
+                        <h3>DevOps Tools</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="Docker">
+                                <div class="skill-icon">
+                                    <i class="fab fa-docker"></i>
+                                </div>
+                                <span>Docker</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Kubernetes">
+                                <div class="skill-icon">
+                                    <i class="fab fa-kubernetes"></i>
+                                </div>
+                                <span>Kubernetes</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Jenkins">
+                                <div class="skill-icon">
+                                    <i class="fab fa-jenkins"></i>
+                                </div>
+                                <span>Jenkins</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" data-skill="Terraform">
+                                <div class="skill-icon">
+                                    <i class="fab fa-terraform"></i>
+                                </div>
+                                <span>Terraform</span>
+                                <div class="skill-progress">
+                                    <div class="progress-bar" data-progress="87"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-subtitle">Some of my recent work</div>
+            </div>
+            <div class="projects-container">
+                <div class="projects-filter">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th-large"></i>
+                        <span>All</span>
+                    </button>
+                    <button class="filter-btn" data-filter="devops">
+                        <i class="fas fa-cogs"></i>
+                        <span>DevOps</span>
+                    </button>
+                    <button class="filter-btn" data-filter="web">
+                        <i class="fas fa-globe"></i>
+                        <span>Web</span>
+                    </button>
+                    <button class="filter-btn" data-filter="ai">
+                        <i class="fas fa-brain"></i>
+                        <span>AI/ML</span>
+                    </button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="devops">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>GitApp – Self-Hosted GitHub Automation Dashboard</h3>
+                                <div class="project-badge">DevOps</div>
+                            </div>
+                            <p>Developed an internal Git management dashboard using Python, integrating GitHub REST APIs and GraphQL. Enabled team-wide visibility into GitHub Actions, pull requests, commit logs, and workflow statuses.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">GitHub API</span>
+                                <span class="tech-tag">GraphQL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="ai">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Movie Recommendation System</h3>
+                                <div class="project-badge">AI/ML</div>
+                            </div>
+                            <p>Engineered a movie recommendation system utilizing Python and collaborative filtering on a dataset of 5000+ movies, achieving an 89% accuracy rate in predicting user film preferences.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Machine Learning</span>
+                                <span class="tech-tag">Collaborative Filtering</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3>Restaurant Web Design</h3>
+                                <div class="project-badge">Web</div>
+                            </div>
+                            <p>The Restaurant Web Design is a simple project using HTML and CSS. The project connects different restaurants with customers and over 10 different restaurants were used to build this webpage.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML/CSS</span>
+                                <span class="tech-tag">Web Design</span>
+                                <span class="tech-tag">Responsive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Learning Timeline</h2>
+                <div class="section-subtitle">My journey of continuous learning</div>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                <div class="timeline-item" data-year="2024" data-month="Dec">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <span class="date">2024</span>
+                                <span class="month">December</span>
+                            </div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <h3>Advanced CI/CD Pipeline Development</h3>
+                        <p>Designed and automated CI/CD pipelines across multiple services to streamline builds, deployments, and upgrade workflows—resulting in consistent and faster releases.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">Jenkins</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024" data-month="Nov">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <span class="date">2024</span>
+                                <span class="month">November</span>
+                            </div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                        </div>
+                        <h3>AWS Infrastructure Optimization</h3>
+                        <p>Provisioned and optimized AWS infrastructure (EC2, EKS, Rocky Linux), resolving several misconfigurations and latency issues during service migrations.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">AWS</span>
+                            <span class="tag">EC2</span>
+                            <span class="tag">EKS</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2024" data-month="Oct">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div class="timeline-date">
+                                <span class="date">2024</span>
+                                <span class="month">October</span>
+                            </div>
+                            <div class="timeline-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                        <h3>AI/ML Application Deployment</h3>
+                        <p>Built scalable CI/CD pipelines for deploying advanced AI/ML applications including RAG, CovAI, Transformer models, and AI Agents, ensuring reliable and scalable production workflows.</p>
+                        <div class="timeline-tags">
+                            <span class="tag">AI/ML</span>
+                            <span class="tag">RAG</span>
+                            <span class="tag">Transformers</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-subtitle">Let's work together</div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-item" data-contact="email">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>shivanarayanps@gmail.com</p>
+                                <button onclick="window.location.href='mailto:shivanarayanps@gmail.com?subject=Hello%20Shiva%20Narayan%20PS&body=Hi%20Shiva%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ABest%20regards%2C'" class="contact-link">Send Email</button>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-contact="phone">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Phone</h3>
+                                <p>+91 98410 45679</p>
+                                <button onclick="window.location.href='tel:+919841045679'" class="contact-link">Call Now</button>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-contact="linkedin">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>linkedin.com/in/shiva-narayan-b439921b7</p>
+                                <button onclick="window.open('https://www.linkedin.com/in/shiva-narayan-b439921b7/', '_blank')" class="contact-link">Connect</button>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-contact="github">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <p>github.com/Shivanarayanps</p>
+                                <button onclick="window.open('https://github.com/Shivanarayanps', '_blank')" class="contact-link">View Profile</button>
+                            </div>
+                        </div>
+                        <div class="contact-item" data-contact="location">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Location</h3>
+                                <p>Bengaluru, India</p>
+                                <button onclick="window.open('https://maps.google.com/?q=Bengaluru,India', '_blank')" class="contact-link">View on Google Maps</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Shiva Narayan PS</h3>
+                    </div>
+                    <p>DevOps & Software Engineer passionate about cloud-native infrastructure and CI/CD automation.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/shiva-narayan-b439921b7/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Shivanarayanps" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-line"></div>
+                <p>&copy; 2024 Shiva Narayan PS. All rights reserved. | Built with ❤️ and ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
