@@ -21,8 +21,6 @@ portfolio/
 ├── script.js                               # JavaScript functionality
 ├── README.md                               # This file
 ├── DEPLOYMENT.md                           # Quick deployment guide
-├── ShivaNarayanPS_DevOpsEngineer.txt      # Resume in text format
-└── ShivaNarayanPS_DevOpsEngineer.pdf      # Resume in PDF format
 ```
 
 ## 🚀 Quick Start
@@ -62,39 +60,6 @@ Edit `script.js` to customize:
 
 ### Free Hosting Platforms
 
-#### 1. **GitHub Pages** (Recommended)
-```bash
-# Create a new repository
-git init
-git add .
-git commit -m "Initial commit"
-git remote add origin https://github.com/yourusername/portfolio.git
-git push -u origin main
-
-# Enable GitHub Pages in repository settings
-# Your site will be available at: https://yourusername.github.io/portfolio
-```
-
-#### 2. **Netlify**
-- Drag and drop your portfolio folder to [Netlify](https://netlify.com)
-- Or connect your GitHub repository for automatic deployments
-
-#### 3. **Vercel**
-- Install Vercel CLI: `npm i -g vercel`
-- Run `vercel` in your portfolio directory
-- Follow the prompts to deploy
-
-#### 4. **Firebase Hosting**
-```bash
-# Install Firebase CLI
-npm install -g firebase-tools
-
-# Initialize Firebase
-firebase init hosting
-
-# Deploy
-firebase deploy
-```
 
 ### Custom Domain Setup
 
